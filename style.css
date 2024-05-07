@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.4;
+}
+
+/* ===========================RESET==================================== */
+header {
+    background-color: #04ade1;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 20px;
+}
+
+/* =====================NAVBAR=================================== */
+.contact a {
+    display: inline-flex;
+    justify-content: flex-end;
+}
+
+.contact a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.contact a:hover {
+    color: #fff900;
+}
+
+nav {
+    background-color: rgb(42, 112, 170);
+    border-radius: 20px;
+    padding: 0.5rem;
+}
+
+nav .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* =====================NAVBAR=================================== */
+/* SEARCHBUTTON  */
+
+
+.search-icon-container {
+    display: flex;
+    position: absolute;
+    right: 70px;
+    top: 50px;
+}
+
+.search-icon-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-icon-container input[type="text"] {
+    padding: 8px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.search-icon-container button {
+    background-color: #04ade1;
+    color: #fff;
+    border: none;
+    padding: 12px 12px;
+    border-radius: 8px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.search-icon-container button:hover {
+    color: #fffb00;
+    background-color;
+}
+
+.search-icon-container i {
+    font-size: 20px;
+}
+
+/* VARNA ANIMATION=============================================== */
+.child-box {
+    font-size: 4rem;
+    color: #ffffff;
+    animation: lighting 4s linear infinite;
+    font-weight: 800;
+}
+
+@keyframes lighting {
+    0% {
+        color: #fff;
+        text-shadow: none;
+    }
+
+    50% {
+        color: #fff;
+        text-shadow: none;
+    }
+
+    100% {
+        color: #fffb00;
+        text-shadow: 0 0 1rem #fff900, 0 0 10rem #ff6c00;
+    }
+}
+
+.child-box:nth-child(1) {
+    animation-delay: 0ms;
+}
+
+.child-box:nth-child(2) {
+    animation-delay: 100ms;
+}
+
+.child-box:nth-child(3) {
+    animation-delay: 200ms;
+}
+
+.child-box:nth-child(4) {
+    animation-delay: 300ms;
+}
+
+.child-box:nth-child(5) {
+    animation-delay: 400ms;
+}
+
+/* ===============================================VARNA ANIMATION */
+
+nav .wrapper a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+nav .wrapper .contact {
+    display: flex;
+    align-items: center;
+}
+
+nav .wrapper .contact .search-icon-container {
+    margin-left: auto;
+}
+
+nav .wrapper .contact .search-icon-container {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+
+
+section {
+    margin-bottom: 2rem;
+}
+
+.hero {
+    background-color: rgb(42, 112, 170);
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.hero h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #04ade1;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 2px;
+}
+
+.about {
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+.attraction {
+    margin-bottom: 2rem;
+}
+
+.attraction img {
+    width: 300px;
+    height: 400px;
+    border-radius: 20%;
+    margin-bottom: 1rem;
+    border: 2px solid black;
+}
+
+.attraction h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.container {
+    perspective: 1000px;
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.card>div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.front {
+    background-color: #f0f0f0;
+}
+
+.back {
+    background-color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back a {
+    text-align: center;
+}
+
+.container:hover .card {
+    transform: rotateY(180deg);
+}
+
+.events ul {
+    list-style: none;
+}
+
+.events ul li {
+    margin-bottom: 0.5rem;
+}
+
+.contact-two {
+    text-align: center;
+}
+
+.contact-two h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: rgb(42, 112, 170);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    border-radius: ;
+}
+
+/* _________________________Responsive_________________________ */
+
+@media screen and (max-width: 767px) {}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {}
+
+@media screen and (min-width: 992px) {}
+
+/* =============ALTERNATIVE============================= */
+/* ============================test========================== */
+
+/* .navigation {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background-color: #04ade1;
+     color: #fff;
+     padding: 1rem;
+     border-radius: 8px;
+    } */
+
+/* .logo a {
+     text-decoration: none;
+     color: #fff;
+     font-weight: bold;
+     font-size: 1.5rem;
+         } */
+
+/* .nav-links {
+     list-style-type: none;
+     display: flex;
+     align-items: center;
+         } */
+
+/* .nav-links li {
+ margin-right: 20px;
+} */
+/*     
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s;
+         } */
+/* .nav-links a:hover {
+             color: #fffb00;
+         }
+     */
+/*     
+         .search-icon-container input[type="text"] {
+             padding: 8px;
+             border-radius: 5px 0 0 5px;
+             border: 1px solid #ccc;
+             font-size: 14px;
+         } */
+
+/* .search-icon-container button {
+             background-color: #04ade1;
+             color: #fff;
+             border: none;
+             padding: 10px 15px;
+             border-radius: 0 5px 5px 0;
+             cursor: pointer;
+             transition: background-color 0.3s;
+         } */
+/*     
+         .search-icon-container button:hover {
+             background-color: #0392c5;
+         } */
