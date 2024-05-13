@@ -12,11 +12,10 @@
     --second-color:#04ade1;
     --thirth-color: #fff;
     --four-color:rgba(0, 0, 0, 0.9);
-
 }
 
 body {
-    width: 75%;
+    width: 100%;
     margin: 0 auto;
     padding: 0 1.25rem;
     background-color: rgb(42, 112, 170);
@@ -30,19 +29,21 @@ body {
 
 .contact {
     font-family: "Roboto", sans-serif;
-    line-height: 1.4;
+    font-size: 2.5rem;
+    padding: 1rem;
 }
 
 /* ===========================RESET==================================== */
 header {
     background-color: #04ade1;
     color: #fff;
-    padding: 1rem;
+    padding: 2rem;
+    margin: 2rem;
     text-align: center;
     border-radius: 20px;
     width: 100%;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
-    border:  0.5rem solid rgb(42, 112, 170);
+    border:  1rem solid rgb(42, 112, 170);
 }
 
 /* =====================NAVBAR=================================== */
@@ -78,13 +79,10 @@ nav .wrapper {
     align-items: center;
 }
 
-
-
-
-.search-icon-container {
+/* .search-icon-container {
     display: flex;
     align-items: end;
-}
+} */
 
 .search-icon-container input[type="text"] {
     padding: 8px;
@@ -192,10 +190,11 @@ section {
 .hero {
     background-color: #04ade1;
     padding: 0.5rem;
+    width: 70%;
+    margin: auto;
     text-align: center;
     border-radius: 20px;
     border: 1rem solid rgb(42, 112, 170);
-    margin: 9px;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9);
 }
 
@@ -205,6 +204,7 @@ section {
     margin-bottom: 1rem;
     color: rgb(2, 60, 107);
     font-weight: 800;
+    border: 1rem;
 }
 
 .hero p {
@@ -234,12 +234,23 @@ section {
 
 .about {
     text-align: center;
+    padding: 2rem;
 }
 
 .about h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: rgb(2, 60, 107);
+    /* color: rgb(2, 60, 107); */
+    color: #fff;
+    font-weight: 500;
+}
+
+.about p {
+text-align: center;
+font-size: 2rem;
+color: #fff;
+font-weight: 400;
+/* color: #04ade1; */
 }
 
 
@@ -322,25 +333,28 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem;
+    width: 70%;
+    margin: auto;
     border-radius:20px;
-    border: 10px solid #04ade1;
+    border: 1rem solid #04ade1;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9);
 }
 
 footer p {
-     background-color: rgb(42, 112, 170);
-     color: #fff;
-     text-align: center;
-     padding: 1rem;
-     border-radius: 20px;
-     border: 10px solid #04ade1;
-     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9);background-color: rgb(42, 112, 170);
-     color: #fff;
-     text-align: center;
-     padding: 1rem;
-     border-radius:20px;
-     border: 10px solid #04ade1;
-     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9);
+    background-color: rgb(42, 112, 170);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 20px;
+    border: 10px solid #04ade1;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9);background-color: rgb(42, 112, 170);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    border-radius:20px;
+    border: 1rem solid #04ade1;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9);
+    font-weight: 600;
 }
     
 
@@ -356,7 +370,7 @@ footer p {
 
 /* ===========================SLIDER========================== */
 
-
+/*
 .about {
     width: 80vmin;
     position: flex;
@@ -364,52 +378,64 @@ footer p {
     overflow: visible;
    
 }
-
-.wrappers {
-    width: 100%;
+*/
+.about {
     display: flex;
-    align-items: center;
     justify-content: center;
-    animation: slide 10s infinite;
-    border-radius: 6rem 6rem 6rem 6rem;
-    border: 6px solid #04ade1;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9);
+    align-items: center;
+    height: 600px;
+    /* width: 1000px; */
 }
+.wrappers {
+    width: 75%;
+    height: 75%;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* flex-wrap: wrap; */
+    overflow: hidden;
+    border-radius: 6rem;
+    border: 1rem solid #04ade1;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9);
+    gap: 30px;
+} 
 
 .img-slide {
-    width: 100%;
+    /* height: 100%; */
+    /* padding: 1px; */
+    /* min-width: 100px;
+    max-width: 100px; */
+    width: 500px;
+    height: 400px;
+    background-size: cover;
+    animation: slide 14s  infinite alternate-reverse;
+    border-radius: 20%;
+    
 }
 
 @keyframes slide {
-    0% {
+    10% {
         transform: translateX(0);
     }
-
-    25% {
-        transform: translateX(0);
-    }
-
     30% {
         transform: translateX(-100%);
     }
-
-    50% {
-        transform: translateX(-100%);
+    45% {
+        transform: translateX(-200%);
     }
-
     55% {
-        transform: translateX(-200%);
+        transform: translateX(-300%);
     }
-
+    65% {
+        transform: translateX(-400%);
+    }
     75% {
-        transform: translateX(-200%);
+        transform: translateX(-500%);
     }
-
-    80% {
-        transform: translateX(-300%);
+    85%{
+        transform: translateX(-600%);
     }
-
     100% {
-        transform: translateX(-300%);
+        transform: translateX(-700%);
     }
 }
