@@ -361,11 +361,17 @@ footer p {
 
 /* _________________________Responsive_________________________ */
 
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+    /* background-color: #04ade1; */
+}
 
-@media screen and (min-width: 768px) and (max-width: 991px) {}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    /* background-color: #fff900; */
+}
 
-@media screen and (min-width: 992px) {}
+@media screen and (min-width: 992px) {
+    /* background-color: rgb(42, 112, 170); */
+}
 
 
 /* ===========================SLIDER========================== */
